@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slocgame</title>
+
+    <link rel="icon" href="./img/logoimg.png" type="image/png" sizes="32x32">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <!-- earn money -->
+    <link rel="stylesheet" href="css/earn money/earnMoney.css">
+    <link rel="stylesheet" href="tictactoe/css/tictactoe.css">
+    
+    <link rel="stylesheet" href="css/spend money/spendMoney.css">
+        <link rel="stylesheet" href="css/spend money/homs/homs.css">
+        <link rel="stylesheet" href="css/spend money/item/item.css">
+        <link rel="stylesheet" href="css/spend money/car/car.css">
+        <link rel="stylesheet" href="css/spend money/business/business.css">
+        <link rel="stylesheet" href="css/casino/casino.css">
+        <link rel="stylesheet" href="css/business/business.css">
+    <!-- header   -->
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body class="body">
+    <header>
+        <div class="header__bac"></div>
+        <div class="container-lg">
+            <div class="header">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="" class="logo__img">
+                </div>
+                <div class="navbar">
+                    <div class="navbar__menus">
+                        <div class="navbar_items navbar__item__earnMoney active block">Заработать деньги</div>
+                        <div class="navbar_items navbar__item__spendMoney">Тратить денгьги</div>
+                        <div class="navbar_items navbar__item__casino">Казино</div>
+                        <div class="navbar_items navbar__item__business">Бизнес</div>                    </div>
+                    <div class="navbar__money">
+                        <div class="money">
+                            <div class="money__number">0</div>$
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="earnMoney block">
+        <div class="container-lg">
+            <div class="earn__money">
+                <div class="earn__money__header">
+                    Заработать деньги
+                </div>
+                <div class="earn__money__content">
+                    <div class="earn__money__box">
+                        <img src="./img/tictactoejpg.jpg" alt="" class="earn__image">
+
+                        <div class="earn__name">Крестики нолики</div>
+
+                        <button class="earn__btn tic">играть</button>
+                    </div>
+                    <div class="earn__money__box">
+                        <img src="./img/bumaga.jpeg" alt="" class="earn__image">
+
+                        <div class="earn__name">Камень ножницы бумага
+                        </div>
+
+                        <button class="earn__btn bumaga">играть</button>
+                    </div>
+                    <div class="earn__money__box">
+                        <img src="./img/maxresdefault.jpg" alt="" class="earn__image">
+
+                        <div class="earn__name">Печатать быстро</div>
+
+                        <button class="earn__btn fast">играть</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="spendmoney">
+        <div class="spendmoney__header">
+            <div class="container-lg">
+                <div class="spend__header">
+                    <div class="spend__header__item hspend__homs active">Домы</div>
+                    <div class="spend__header__item hspend__item ">Еда</div>
+                    <div class="spend__header__item hspend__cars ">Автомобилы</div>
+                    <div class="spend__header__item hspend__business">бизнес</div>
+                    <div class="spend__header__item hspend__elect ">Электроника</div>
+                </div>
+            </div>
+        </div>
+        <div class="container-lg">
+            <div class="spend__money">
+                <div class="spend__homs block active">
+                    <div class="homs__header">Домы</div>
+                    <div class="homs__content">
+                        <div class="homs__box">
+                            <img class="homs__image" src="img/house.jpg" alt="">
+                            <div class="homs__content__top">
+                                <div class="hom__name">
+                                    hi tech house
+                                </div>
+                                <div class="homs__moneynumber">
+                                    <div class="inline-block hom_money">1200</div> $
+                                </div>
+                            </div>
+                            <div class="homs__content__bottom">
+                                <div class="addremovemoney">
+                                    <div class="addremovemoney__btn item__add__money" data-id="home1">+</div>
+                                    <div class="addremovemoney__btn buynumber home__buynumber a1" >0</div>
+                                    <div class="addremovemoney__btn remove__money" data-id="home1">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="homs__box">
+                            <img class="homs__image" src="img/home2.jpg" alt="">
+                            <div class="homs__content__top">
+                                <div class="hom__name">
+                                    Деревянный дом
+                                </div>
+                                <div class="homs__moneynumber">
+                                    <div class="inline-block hom_money">1000</div> $
+                                </div>
+                            </div>
+                            <div class="homs__content__bottom">
+                                <div class="addremovemoney">
+                                    <div class="addremovemoney__btn item__add__money" data-id="home2">+</div>
+                                    <div class="addremovemoney__btn buynumber home__buynumber a2" data-id="home2">0</div>
+                                    <div class="addremovemoney__btn remove__money" data-id="home2">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="homs__box">
+                            <img class="homs__image" src="img/home34.webp" alt="">
+                            <div class="homs__content__top">
+                                <div class="hom__name">
+                                  mini  hi tech house
+                                </div>
+                                <div class="homs__moneynumber">
+                                    <div class="inline-block hom_money">600</div> $
+                                </div>
+                            </div>
+                            <div class="homs__content__bottom">
+                                <div class="addremovemoney">
+                                    <div class="addremovemoney__btn item__add__money" data-id="home3">+</div>
+                                    <div class="addremovemoney__btn buynumber home__buynumber a3" data-id="home3">0</div>
+                                    <div class="addremovemoney__btn remove__money" data-id="home3">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="homs__box">
+                            <img class="homs__image" src="img/home4.jpg" alt="">
+                            <div class="homs__content__top">
+                                <div class="hom__name">
+                                    white prince house
+                                </div>
+                                <div class="homs__moneynumber">
+                                    <div class="inline-block hom_money">1300</div> $
+                                </div>
+                            </div>
+                            <div class="homs__content__bottom">
+                                <div class="addremovemoney">
+                                    <div class="addremovemoney__btn item__add__money" data-id="home4">+</div>
+                                    <div class="addremovemoney__btn buynumber home__buynumber a4" data-id="home4">0</div>
+                                    <div class="addremovemoney__btn remove__money" data-id="home4">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="homs__box">
+                            <img class="homs__image" src="img/home5.jpg" alt="">
+                            <div class="homs__content__top">
+                                <div class="hom__name">
+                                    black star house
+                                </div>
+                                <div class="homs__moneynumber">
+                                    <div class="inline-block hom_money">1500</div> $
+                                </div>
+                            </div>
+                            <div class="homs__content__bottom">
+                                <div class="addremovemoney">
+                                    <div class="addremovemoney__btn item__add__money" data-id="home5">+</div>
+                                    <div class="addremovemoney__btn buynumber home__buynumber a5" data-id="home5">0</div>
+                                    <div class="addremovemoney__btn remove__money" data-id="home5">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="homs__box">
+                            <img class="homs__image" src="img//home6.jpg" alt="">
+                            <div class="homs__content__top">
+                                <div class="hom__name">
+                                    triangle mini house
+                                </div>
+                                <div class="homs__moneynumber">
+                                    <div class="inline-block hom_money">500</div> $
+                                </div>
+                            </div>
+                            <div class="homs__content__bottom">
+                                <div class="addremovemoney">
+                                    <div class="addremovemoney__btn item__add__money" data-id="home6">+</div>
+                                    <div class="addremovemoney__btn buynumber home__buynumber a6" data-id="home6">0</div>
+                                    <div class="addremovemoney__btn remove__money" data-id="home6">-</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spend__items">
+                    <div class="spend__item__header">
+                        Еда
+                    </div>
+
+                    <div class="spend__item__content">
+                        <div class="item__box">
+                            <img class="item__image" src="img/maxresdefault (1).jpg" alt="">
+                            <div class="item__content__top">
+                                <div class="item__name">
+                                    lavash
+                                </div>
+                                <div class="item__moneynumber">
+                                    <div class="inline-block item_money">2</div> $
+                                </div>
+                            </div>
+                            <div class="item__content__bottom">
+                                <div class="item__addremovemoney">
+                                    <div class="item__addremovemoney__btn item__add__money" data-id="item1">+</div>
+                                    <div class="item__addremovemoney__btn buynumber home__buynumber b1" data-id="item1">0</div>
+                                    <div class="item__addremovemoney__btn remove__money" data-id="item1">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__box">
+                            <img class="item__image" src="img/item/gamburger.jpg" alt="">
+                            <div class="item__content__top">
+                                <div class="item__name">
+                                    gamburger
+                                </div>
+                                <div class="item__moneynumber">
+                                    <div class="inline-block item_money">3</div> $
+                                </div>
+                            </div>
+                            <div class="item__content__bottom">
+                                <div class="item__addremovemoney">
+                                    <div class="item__addremovemoney__btn item__add__money" data-id="item2">+</div>
+                                    <div class="item__addremovemoney__btn buynumber home__buynumber b2" data-id="item2">0</div>
+                                    <div class="item__addremovemoney__btn remove__money" data-id="item2">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__box">
+                            <img class="item__image" src="img/item/sendvoich.jpg" alt="">
+                            <div class="item__content__top">
+                                <div class="item__name">
+                                    cla sendvich
+                                </div>
+                                <div class="item__moneynumber">
+                                    <div class="inline-block item_money">3</div> $
+                                </div>
+                            </div>
+                            <div class="item__content__bottom">
+                                <div class="item__addremovemoney">
+                                    <div class="item__addremovemoney__btn item__add__money" data-id="item3">+</div>
+                                    <div class="item__addremovemoney__btn buynumber home__buynumber b3" data-id="item3">0</div>
+                                    <div class="item__addremovemoney__btn remove__money" data-id="item3">-</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item__box">
+                            <img class="item__image" src="img/item/pizaa.jpg" alt="">
+                            <div class="item__content__top">
+                                <div class="item__name">
+                                    pizza
+                                </div>
+                                <div class="item__moneynumber">
+                                    <div class="inline-block item_money">7</div> $
+                                </div>
+                            </div>
+                            <div class="item__content__bottom">
+                                <div class="item__addremovemoney">
+                                    <div class="item__addremovemoney__btn item__add__money" data-id="item4">+</div>
+                                    <div class="item__addremovemoney__btn buynumber home__buynumber b4" data-id="item4">0</div>
+                                    <div class="item__addremovemoney__btn remove__money" data-id="item4">-</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item__box">
+                            <img class="item__image" src="img/item/dorogo.jpg" alt="">
+                            <div class="item__content__top">
+                                <div class="item__name">
+                                    трюфель
+                                </div>
+                                <div class="item__moneynumber">
+                                    <div class="inline-block item_money">1000</div> $
+                                </div>
+                            </div>
+                            <div class="item__content__bottom">
+                                <div class="item__addremovemoney">
+                                    <div class="item__addremovemoney__btn item__add__money" data-id="item5">+</div>
+                                    <div class="item__addremovemoney__btn buynumber home__buynumber b5" data-id="item5">0</div>
+                                    <div class="item__addremovemoney__btn remove__money" data-id="item5">-</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="spend__cars">
+                    <div class="spend__cars__header">
+                        Автомобилы
+                    </div>
+
+                    <div class="spend__cars__content">
+
+                        <div class="cars__box">
+                            <img class="cars__image" src="img/cars/coolest-cars-feature.jpg" alt="">
+                            <div class="cars__content__top">
+                                <div class="cars__name">
+                                    Bugatti bolide
+                                </div>
+                                <div class="cars__moneynumber">
+                                    <div class="inline-block cars_money">4000</div> $
+                                </div>
+                            </div>
+                            <div class="cars__content__bottom">
+                                <div class="cars__addremovemoney">
+                                    <div class="cars__addremovemoney__btn item__add__money" data-id="car1">+</div>
+                                    <div class="cars__addremovemoney__btn buynumber home__buynumber c1" data-id="car1">0</div>
+                                    <div class="cars__addremovemoney__btn remove__money" data-id="car1">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cars__box">
+                            <img class="cars__image" src="img/cars/5ab23b82ec05c46e0300000e.jpg" alt="">
+                            <div class="cars__content__top">
+                                <div class="cars__name">
+                                    Ford fusion
+                                </div>
+                                <div class="cars__moneynumber">
+                                    <div class="inline-block cars_money">1200</div> $
+                                </div>
+                            </div>
+                            <div class="cars__content__bottom">
+                                <div class="cars__addremovemoney">
+                                    <div class="cars__addremovemoney__btn item__add__money" data-id="car2">+</div>
+                                    <div class="cars__addremovemoney__btn buynumber home__buynumber c2" data-id="car2">0</div>
+                                    <div class="cars__addremovemoney__btn remove__money" data-id="car2">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cars__box">
+                            <img class="cars__image" src="img/cars/audi-a5-coupe-e-tron-x-tomi.webp" alt="">
+                            <div class="cars__content__top">
+                                <div class="cars__name">
+                                    Audi
+                                </div>
+                                <div class="cars__moneynumber">
+                                    <div class="inline-block cars_money">2500</div> $
+                                </div>
+                            </div>
+                            <div class="cars__content__bottom">
+                                <div class="cars__addremovemoney">
+                                    <div class="cars__addremovemoney__btn item__add__money" data-id="car3">+</div>
+                                    <div class="cars__addremovemoney__btn buynumber home__buynumber c3" data-id="car3 ">0</div>
+                                    <div class="cars__addremovemoney__btn remove__money" data-id="car3">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cars__box">
+                            <img class="cars__image" src="img/cars/refreshed-tesla-model-x.webp" alt="">
+                            <div class="cars__content__top">
+                                <div class="cars__name">
+                                    
+                                    Tesla model X
+                                </div>
+                                <div class="cars__moneynumber">
+                                    <div class="inline-block cars_money">1000</div> $
+                                </div>
+                            </div>
+                            <div class="cars__content__bottom">
+                                <div class="cars__addremovemoney">
+                                    <div class="cars__addremovemoney__btn item__add__money" data-id="car4">+</div>
+                                    <div class="cars__addremovemoney__btn buynumber home__buynumber c4" data-id="car4 ">0</div>
+                                    <div class="cars__addremovemoney__btn remove__money" data-id="car4">-</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="spend__business">
+                    <div class="spend__business__header">
+                        Бизнес
+                    </div>
+
+                    <div class="spend__business__content">
+
+                        <div class="business__box">
+                            <img class="business__image" src="img/kafe.png" alt="">
+                            <div class="business__content__top">
+                                <div class="business__name">
+                                    Cafe
+                                </div>
+                                <div class="business__info">
+                                    В секунду дает 5$
+                                </div>
+                            </div>
+                            <div class="business__content__bottom">
+                                <div class="business__moneynumber">
+                                    <div class="inline-block business_money">500</div> $
+                                </div>
+                                
+                                <div class="business_buybtn buy__btn" data-id="business1">Купить</div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="business__box">
+                            <img class="business__image" src="img/shop.jpg" alt="">
+                            <div class="business__content__top">
+                                <div class="business__name">
+                                    shop
+                                </div>
+                                <div class="business__info">
+                                    В секунду дает 3$
+                                </div>
+                            </div>
+                            <div class="business__content__bottom">
+                                <div class="business__moneynumber">
+                                    <div class="inline-block business_money">350</div> $
+                                </div>
+                                
+                                <div class="business_buybtn buy__btn" data-id="business2">Купить</div>
+                            </div>
+                        </div>
+                        
+                        <div class="business__box">
+                            <img class="business__image" src="img/images.jpg" alt="">
+                            <div class="business__content__top">
+                                <div class="business__name">
+                                    Завод
+                                </div>
+                                <div class="business__info">
+                                    В секунду дает 25$
+                                </div>
+                            </div>
+                            <div class="business__content__bottom">
+                                <div class="business__moneynumber">
+                                    <div class="inline-block business_money">1500</div> $
+                                </div>
+                                
+                                <div class="business_buybtn buy__btn" data-id="business3">Купить</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="spend__elect">
+                    <div class="spend__item__header">
+                        Электроника
+                    </div>
+                    <div class="spend__item__content">
+                        <div class="item__box">
+                            <img class="item__image" src="img/iphone.jpg" alt="">
+                            <div class="item__content__top">
+                                <div class="item__name">
+                                    iphone 13 pro max
+                                </div>
+                                <div class="item__moneynumber">
+                                    <div class="inline-block item_money">25</div> $
+                                </div>
+                            </div>
+                            <div class="item__content__bottom">
+                                <div class="item__addremovemoney">
+                                    <div class="item__addremovemoney__btn item__add__money" data-id="elect1">+</div>
+                                    <div class="item__addremovemoney__btn buynumber home__buynumber d1" data-id="elect1">0</div>
+                                    <div class="item__addremovemoney__btn remove__money" data-id="elect1">-</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item__box">
+                            <img class="item__image" src="img/elect/samsunga53.webp" alt="">
+                            <div class="item__content__top">
+                                <div class="item__name">
+                                    Samsung A53
+                                </div>
+                                <div class="item__moneynumber">
+                                    <div class="inline-block item_money">22</div> $
+                                </div>
+                            </div>
+                            <div class="item__content__bottom">
+                                <div class="item__addremovemoney">
+                                    <div class="item__addremovemoney__btn item__add__money" data-id="elect2">+</div>
+                                    <div class="item__addremovemoney__btn buynumber home__buynumber d2" data-id="elect2">0</div>
+                                    <div class="item__addremovemoney__btn remove__money" data-id="elect2">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__box">
+                            <img class="item__image" src="img/elect/Nothing-Phone-1-black.jpg" alt="">
+                            <div class="item__content__top">
+                                <div class="item__name">
+                                    Nothing phone 1
+                                </div>
+                                <div class="item__moneynumber">
+                                    <div class="inline-block item_money">20</div> $
+                                </div>
+                            </div>
+                            <div class="item__content__bottom">
+                                <div class="item__addremovemoney">
+                                    <div class="item__addremovemoney__btn item__add__money" data-id="elect3">+</div>
+                                    <div class="item__addremovemoney__btn buynumber home__buynumber d3" data-id="elect3">0</div>
+                                    <div class="item__addremovemoney__btn remove__money" data-id="elect3">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__box">
+                            <img class="item__image" src="img/elect/huaweimate50.png" alt="">
+                            <div class="item__content__top">
+                                <div class="item__name">
+                                    Huawei Mate 50
+                                </div>
+                                <div class="item__moneynumber">
+                                    <div class="inline-block item_money">22</div> $
+                                </div>
+                            </div>
+                            <div class="item__content__bottom">
+                                <div class="item__addremovemoney">
+                                    <div class="item__addremovemoney__btn item__add__money" data-id="elect4">+</div>
+                                    <div class="item__addremovemoney__btn buynumber home__buynumber d4" data-id="elect4">0</div>
+                                    <div class="item__addremovemoney__btn remove__money" data-id="elect4">-</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item__box">
+                            <img class="item__image" src="img/elect/phone.jpg" alt="">
+                            <div class="item__content__top">
+                                <div class="item__name">
+                                    Vivo X Fold
+                                </div>
+                                <div class="item__moneynumber">
+                                    <div class="inline-block item_money">20</div> $
+                                </div>
+                            </div>
+                            <div class="item__content__bottom">
+                                <div class="item__addremovemoney">
+                                    <div class="item__addremovemoney__btn item__add__money" data-id="elect5">+</div>
+                                    <div class="item__addremovemoney__btn buynumber home__buynumber d5" data-id="elect5">0</div>
+                                    <div class="item__addremovemoney__btn remove__money" data-id="elect5">-</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="casino">
+        <div class="container-lg">
+            <div class="casi__no">
+                <div class="casino__header">Казино</div>
+                <div class="casino__content">
+                    <div class="casino__box">
+                        <div class="casino__box__header">
+                            угадай числу x10
+                        </div>
+                        <div class="casiono__box__text">
+                            <div class="casiono__box__text__header">
+                                Суть игры
+                            </div>
+                            <div class="casiono__box__text__text">
+                                Ты должен угадать число от 1 до 100 . Если угадаешь получишь x10 твоей вложенной сумме
+                            </div>
+                        </div>
+                        <div class="casino__conect">
+                            <input class="casino__conect__input casino__conect__input1" type="number" placeholder="введите сумму">
+                            <input type="number" class="casinorandomnumber casinorandomnumber1" placeholder="число" min="1" max="100">
+                            <button class="casino__button__connect casino__button__connect1">Играть</button>
+                        </div>
+                    </div>
+                    <div class="casino__box">
+                        <div class="casino__box__header">
+                            угадай числу x5
+                        </div>
+                        <div class="casiono__box__text">
+                            <div class="casiono__box__text__header">
+                                Суть игры
+                            </div>
+                            <div class="casiono__box__text__text">
+                                Ты должен угадать число от 1 до 50 . Если угадаешь получишь x5 твоей вложенной сумме
+                            </div>
+                        </div>
+                        <div class="casino__conect">
+                            <input class="casino__conect__input casino__conect__input2" type="number" placeholder="введите сумму">
+                            <input type="number" class="casinorandomnumber casinorandomnumber2" placeholder="число" min="1" max="50">
+                            <button class="casino__button__connect casino__button__connect2">Играть</button>
+                        </div>
+                        
+                    </div>
+                    <div class="casino__box">
+                        <div class="casino__box__header">
+                            угадай числу x1.5
+                        </div>
+                        <div class="casiono__box__text">
+                            <div class="casiono__box__text__header">
+                                Суть игры
+                            </div>
+                            <div class="casiono__box__text__text">
+                                Ты должен угадать число от 1 до 15 . Если угадаешь получишь x1.5 твоей вложенной сумме
+                            </div>
+                        </div>
+                        <div class="casino__conect">
+                            <input class="casino__conect__input casino__conect__input3" type="number" placeholder="введите сумму">
+                            <input type="number" class="casinorandomnumber casinorandomnumber3" placeholder="число" min="1" max="15">
+                            <button class="casino__button__connect casino__button__connect3">Играть</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mybusiness">
+        <div class="container-lg">
+            <div class="mybusiness__content">
+                <div class="business__header">
+                    <div class="mybusiness__header__text">Бизнесы</div>
+                    <div class="mybusiness__header__bottom">
+                        В секунду дает <div class="mybusiness__header__bottom__number inline-block">0</div> $
+                    </div>
+                </div>
+                <div class="mybusiness__content__boxs">
+
+                    <div class="mybusiness__dontinfo">
+                        <div class="mybusiness__dontinfo__text">
+                            у вас нет бизнеса. Если хотите купить <div class="mybusiness__dontinfo__text__btn">нажмите сюда</div>
+                        </div>
+                    </div>
+                
+
+                    <div class="mybusiness__box mybusiness__box1">
+                        <img class="mybusiness__image" src="./img/shop.jpg" alt="">
+                        <div class="mybusiness__content__top">
+                            <div class="mybusiness__name">
+                                <div class="mybusiness__name__text__top">shop</div>
+                                <div class="mybusiness__name__text__bottom">В секунду дает <div class="mybusiness__name__text__number inline-block">3</div>$</div>
+                            </div>
+                            <div class="mybusiness__box__moneynumber">350$</div>
+                        </div>
+                    </div>
+
+                    <div class="mybusiness__box mybusiness__box2">
+                        <img class="mybusiness__image" src="./img/kafe.png" alt="">
+                        <div class="mybusiness__content__top">
+                            <div class="mybusiness__name">
+                                <div class="mybusiness__name__text__top">Cafe</div>
+                                <div class="mybusiness__name__text__bottom">В секунду дает <div class="mybusiness__name__text__number inline-block">5</div>$</div>
+                            </div>
+                            <div class="mybusiness__box__moneynumber">500$</div>
+                        </div>
+                    </div>
+
+                    <div class="mybusiness__box mybusiness__box3">
+                        <img class="mybusiness__image" src="./img/kafe.png" alt="">
+                        <div class="mybusiness__content__top">
+                            <div class="mybusiness__name">
+                                <div class="mybusiness__name__text__top">Завод</div>
+                                <div class="mybusiness__name__text__bottom">В секунду дает <div class="mybusiness__name__text__number inline-block">25</div>$</div>
+                            </div>
+                            <div class="mybusiness__box__moneynumber">1500$</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tictactoe">
+        <div class="container-lg">
+            <div class="tictac__toe">
+                <div class="tictactoe__header">
+                    <div class="tictactoe__header__header">
+                        Крестики нолики
+                    </div>
+                    <div class="tictactoe__header__text">В этой игре ты должен выиграть бота. За каждый выиграшь ты получаешь 10$. За проигрышь ты теряешь 5 $</div>
+                </div>
+               <div class="tictactoe__content__bottom">
+                    <div class="tictactoe__inforesult">
+                        <div class="tictactoe__inforesult__you tictactoe__inforesult__youwons">Ты выиграл : <div class="tictactoe__inforesult__youwons__number inline-block">0</div></div>
+                        <div class="tictactoe__inforesult__you tictactoe__inforesult__youdraw">Ничя : <div class="tictactoe__inforesult__youdraw__number inline-block">0</div></div>
+                        <div class="tictactoe__inforesult__you tictactoe__inforesult__youlouses">Ты проиграл : <div class="tictactoe__inforesult__youlouses__number inline-block">0</div></div>
+                        <div class="tictactoe__inforesult__you tictactoe__inforesult__youmoney">Твой доход : <div class="tictactoe__inforesult__youmoney__number inline-block">0</div>$</div>
+
+                        <div class="tictactoe__inforesult__btn">
+                            <div class="ticresult"></div>
+                            <button class="ticsbros">Сброс</button>
+                        </div>
+                    </div>
+                    <div class="tic__tactoe__content">
+                        <div class="tictactoe__content">
+                            <div class="tictactoe__box1 tictactoe__box" data-id="1"></div>
+                            <div class="tictactoe__box2 tictactoe__box" data-id="2"></div>
+                            <div class="tictactoe__box3 tictactoe__box" data-id="3"></div>
+                            <div class="tictactoe__box4 tictactoe__box" data-id="4"></div>
+                            <div class="tictactoe__box5 tictactoe__box" data-id="5"></div>
+                            <div class="tictactoe__box6 tictactoe__box" data-id="6"></div>
+                            <div class="tictactoe__box7 tictactoe__box" data-id="7"></div>
+                            <div class="tictactoe__box8 tictactoe__box" data-id="8"></div>
+                            <div class="tictactoe__box9 tictactoe__box" data-id="9"></div>
+                        </div>
+                        <button class="ticnewgame">New game</button>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/delete/remove.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/spend/spend.js"></script>
+    <script src="js/casino/casino.js"></script>
+    <script src="js/audiomoney/sound.js"></script>
+    <script src="tictactoe/js/tictactoe.js"></script>
+    <script src="js/business/business.js"></script>
+</body>
+</html>

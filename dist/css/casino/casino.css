@@ -1,0 +1,68 @@
+.casino__box {
+    width: 690px;
+    padding: 0px 35px 0px 35px;
+    background: rgba(255, 255, 255, 0.1);
+    font-weight: 400;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.casino__box__header {
+    padding: 8px auto 20px auto;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.casiono__box__text {
+    margin: 20px 0px 20px 0px;
+}
+
+.casiono__box__text__text {
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #D0CFCF;
+}
+
+.casiono__box__text__header {
+    font-size: 20px;
+    line-height: 24px;
+    color: #B3EDFF;
+}
+
+.casino__button__connect {
+    width: 90px;
+    height: 26px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    display: inline-block;
+    text-align: center;
+    outline: none;
+    background: #4D9023;
+    border: 1px solid white;
+}
+
+.casino {
+    display: none;
+}
+
+.casino__header {
+    margin: 38px 0px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.casino__conect__input {
+    color: black;
+}
+
+.casinorandomnumber {
+    color: black;
+}
+

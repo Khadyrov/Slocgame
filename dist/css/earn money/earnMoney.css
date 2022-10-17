@@ -1,0 +1,57 @@
+.earnMoney {
+    width: 100%;
+    margin-top: 60px;
+    display: none;
+}
+
+.earn__money__header {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    margin-left: 20px;
+}
+
+.earn__money__content {
+    margin-top: 60px;
+}
+
+.earn__money__box {
+    width: 350px;
+    background-color: #272727;
+    padding-top: 35px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid #fff;
+    margin: 15px 0px;
+}
+
+.earn__name {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.earn__btn {
+    width: 208.51px;
+    height: 61.54px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 35px 0px 15px 0px;
+    text-align: center;
+}
+
+.earn__money__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.earn__image {
+    width: 250px;
+    height: 200px;
+}

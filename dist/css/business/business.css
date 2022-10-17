@@ -1,0 +1,94 @@
+.business__header__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    margin-top: 55px;
+    font-family: sans-serif;
+}
+
+.mybusiness__header__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+
+.mybusiness {
+    display: none;
+}
+
+.mybusiness__box {
+    width: 380px;
+    border: 1px solid white;
+    padding: 15px 29px;
+    display: none;
+}
+
+.mybusiness__image {
+    width: 320px;
+    height: 270px;
+}
+
+.mybusiness__content__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 24px;
+    margin-top: 19px;
+}
+
+.mybusiness__buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mybusiness__name__text__bottom {
+    font-size: 15px;
+}
+
+.mybusiness__buttons__improve {
+    display: block;
+    width: 197px;
+    height: 42px;
+    border: 1px solid #89FF95;
+    background: transparent;
+}
+
+.mybusiness__buttons__sale {
+    width: 102px;
+    height: 42px;
+    background: #FF4949;
+    border: none;
+}
+
+.business__header {
+    margin-top: 60px;
+
+}
+
+.mybusiness__content {
+    margin-top: 70px;
+}
+
+.mybusiness__content__boxs {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mybusiness__dontinfo__text__btn {
+    color: rgb(134, 235, 134);
+    cursor: pointer;
+}
+
+.mybusiness__dontinfo {
+    display: none;
+}

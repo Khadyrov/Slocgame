@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    width: 100%;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 15px;
+    border-bottom: 1px solid #fff;
+}
+
+.header__bac {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.3;
+}
+
+.header__bac {
+    z-index: -1;
+}
+
+.logo__img {
+    width: 150px;
+    height: 39px;
+}
+
+.navbar__menus {
+    display: flex;
+    margin-right: 40px;
+}
+
+.navbar_items {
+    margin: 0px 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.active {
+    color: #FFD600;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.money {
+    display: inline-block;
+    font-family: 'Inter';
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.money__number {
+    display: inline-block;
+}
+
+.navbar_items:hover {
+    color: #FFD600;
+}
+
+.spend__elect {
+    display: none;
+}
+
+
+.block {
+    display: block;
+}
+
+.buy__btn {
+    cursor: pointer;
+}
+
+.add__money , .remove__money {
+    cursor: pointer;
+}
+

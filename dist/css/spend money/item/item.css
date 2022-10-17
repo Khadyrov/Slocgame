@@ -1,0 +1,83 @@
+.spend__item__header {
+    margin: 51px 0px 30px 0px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.item__box {
+    width: 220px;
+    height: 250px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.spend__items {
+    display: none;
+}
+
+.item__image {
+    width: 200px;
+    height: 135px;
+    margin: auto;
+    margin-bottom: 15px;
+    border: 1px solid white;
+}
+
+.item__content__top {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.item__content__bottom {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.item__buybtn {
+    width: 105px;
+    height: 35px;
+    text-align: center;
+    font-size: 15px;
+    background: #B1BD20;
+    border: 1px solid #FFFFFF;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spend__item__content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item__addremovemoney__btn {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0px 8px 0px 8px;
+}
+
+.item__addremovemoney {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item__add__money {
+    cursor: pointer;
+}
