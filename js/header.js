@@ -16,7 +16,39 @@ let
     tictactoe = document.querySelector('.tictactoe'),
     spendmoney = document.querySelector('.spendmoney');
 
-    body.addEventListener('click', event => {
+function remove() {
+    spendmoney.classList.remove('block');
+    earnmoney.classList.remove('block');
+    casino.classList.remove('block')
+    business.classList.remove('block')
+    tictactoe.classList.remove('block')
+}
+
+function removeactive() {
+    navbarearnmoney.classList.remove('active');
+    navbarspendmoney.classList.remove('active');
+    navbarcasino.classList.remove('active');
+    navbarbusiness.classList.remove('active');
+    tic.classList.remove('active');
+}
+
+function removespendactive() {
+    hspendhoms.classList.remove('active')
+    hspenditem.classList.remove('active')
+    hspendcars.classList.remove('active'),
+    hspendbusiness.classList.remove('active')
+    hspendelect.classList.remove('active')
+}
+
+function removespendheader() {
+    spend__homs.classList.remove('block')
+    spend__items.classList.remove('block')
+    spend__cars.classList.remove('block')
+    spend__business.classList.remove('block')
+    spend__elect.classList.remove('block')
+}
+
+body.addEventListener('click', event => {
     if(!event.target.classList.contains('navbar_items') && !event.target.classList.contains('earn__btn')) return
     remove();
     removeactive();
