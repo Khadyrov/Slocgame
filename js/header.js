@@ -10,6 +10,12 @@ let
     navbarpurchases = document.querySelector('.navbar__item__purchases');
 
 let 
+    soundmoney = new Audio('../audio/sound.mp3'),
+    casinowim = new Audio('../audio/win.mp3'),
+    casinolouse = new Audio('../audio/louse.mp3'),
+    addsoundmoney = new Audio('../audio/zvuk.mp3');
+
+let 
     earnmoney = document.querySelector('.earnMoney'),
     casino = document.querySelector('.casino'),
     business = document.querySelector('.mybusiness'),
